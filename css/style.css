@@ -1,0 +1,112 @@
+.container-block {
+    width: 1160px;
+    margin:0 auto;
+}
+.left-block {
+    width:760px;
+    margin-right: 40px;
+}
+.right-block {
+    display: inline-block;
+    width:360px;
+    vertical-align: top;
+}
+.text-image {
+    position: absolute;
+    top:50px;
+    left:150px;
+}
+.image-wraper {
+    position: relative;
+}
+
+/* footer styles */
+.footer-bg {
+    background-color: #A6ADB4;
+    padding-top: 56px;
+    padding-bottom: 60px;
+}
+/* .block1,
+.block2,
+.block3,
+.block4,
+.block5,
+.block6 {
+    display: inline-block;
+    vertical-align: top;
+} */
+.d-inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* center position properties */
+.wraper {
+    width:400px;
+    height: 400px;
+    background-color: yellow;
+    position: relative;
+
+    /* transition-property: all;
+    transition-duration: .4s;
+    transition-timing-function: linear;
+    transition-delay: 2s; */
+    transition: all 0.4s linear 2s;
+}
+.child-wraper {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition:all 2s;
+}
+.hello {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* hover effects */
+.wraper:hover {
+    background-color: blue;
+    
+}
+.child-wraper:hover {
+    width:300px;
+    background-color: darkgoldenrod;
+}
+
+/* .wraper:hover .child-wraper {
+    width:300px;
+    background-color: darkgoldenrod;
+} */
+
+
+/* car animation */
+.image-car {
+    height: 150px;
+    animation: caranimation2 5s ease-in-out infinite alternate 4s;
+    position: absolute;
+}
+.car-block {
+    position: relative;
+    height: 200px;
+}
+
+@keyframes caranimation {
+    from {left:0;}
+    to {left: 80%;}
+}
+
+@keyframes caranimation2 {
+   0% {left:0}
+   20% {left: 30%;}
+   70% {left:60%;}
+   100% {left: 80%;}
+}
