@@ -61,7 +61,7 @@
     position: absolute;
     top:50%;
     left:50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(45deg);
     transition:all 2s;
 }
 .hello {
@@ -74,12 +74,12 @@
 
 /* hover effects */
 .wraper:hover {
-    background-color: blue;
-    
+    background-color: blue; 
 }
 .child-wraper:hover {
     width:300px;
     background-color: darkgoldenrod;
+    transform: translate(-50%, -50%) rotate(0deg);
 }
 
 /* .wraper:hover .child-wraper {
@@ -87,15 +87,18 @@
     background-color: darkgoldenrod;
 } */
 
-
+.text {
+    color: red;
+    opacity: 0.7;
+}
 /* car animation */
 .image-car {
     height: 150px;
-    animation: caranimation2 5s ease-in-out infinite alternate 4s;
-    position: absolute;
+    animation: caranimation3 5s ease-in-out infinite alternate 4s;
+    /* position: absolute; */
 }
 .car-block {
-    position: relative;
+    /* position: relative; */
     height: 200px;
 }
 
@@ -110,3 +113,88 @@
    70% {left:60%;}
    100% {left: 80%;}
 }
+
+@keyframes caranimation3 {
+    0% {transform: translateX(0) rotate(0deg);}
+    20% {transform: translateX(200px) rotate(360deg);}
+    70% {transform: translateX(600px) rotate(0deg);}
+    100% {transform: translateX(800px) rotate(360deg);}
+ }
+ 
+
+
+
+
+ /* flex */
+ .left-wraper {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .right-wraper {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+ }
+ .center-wraper {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+ }
+ .flex-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+
+ /* flex practice */
+ .container {
+    width:1170px;
+    margin:0 auto;
+    background-color: lightblue;
+ }
+ .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .block {
+    width: 371px;
+    height: 374px;
+    background-color: gray;
+ }
+ .flex-wraper1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ .flex-wraper2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+ }
+ .blue-box {
+    width:88px;
+    height: 88px;
+    background-color: #325DFF;
+    border-radius: 50%;
+ }
+ .gamaertianebeli-block {
+    width:251px;
+    background-color: yellow;
+    flex-direction: column;
+    text-align: center;
+ }
+ .marginBottom {
+    margin-bottom: 25px;
+ }
+ .tekstebis-blocki {
+    width: 771px;
+    margin:0 auto;
+    background-color: aquamarine;
+    text-align: center;
+ }
